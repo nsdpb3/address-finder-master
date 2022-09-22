@@ -1,0 +1,114 @@
+body {
+  /* background-color: rgb(216, 216, 216); */
+  /* font-family: 'Raleway', sans-serif; */
+}
+
+.navbar-brand {
+  font-weight: bold;
+  /* font-family: 'Raleway', sans-serif; */
+  font-size: 2rem;
+  color: #0d6efd !important;
+  letter-spacing: 0.1rem;
+}
+
+.adress-block {
+  justify-content: center;
+}
+
+.adress-block form {
+  max-width: 600px;
+}
+
+.thead th {
+  text-align: center;
+}
+
+.table .row {
+  max-width: 600px;
+  margin: auto;
+  padding: 0 12px;
+}
+
+.adress-block form button {
+  margin: auto;
+  display: block;
+  font-weight: 600;
+  /* text-transform: uppercase; */
+}
+
+.btn {
+  padding: 10px 30px;
+  font-size: 1rem;
+  max-width: 150px;
+}
+
+.table .error {
+  background-color: #dc3545;
+  color: #fff;
+  border-radius: 10px;
+  padding: 50px 0;
+}
+
+.error-text {
+  font-size: 1.5rem;
+  text-align: center;
+}
+
+.no-show {
+  display: none;
+}
+
+.show {
+  display: block;
+}
+
+#results {
+  border: 1px solid #ced4da;
+  border-radius: 10px;
+  list-style: none;
+  padding: 0;
+}
+
+#results li {
+  padding-left: 10px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+#results li:hover {
+  transition: .3s ease-in-out;
+  background-color: #cccdcfa9;
+}
+
+.input-block.err {
+  border: 1px solid #dc3545;
+  box-shadow: 1px 1px 5px #dc3545;
+}
+
+input {
+  border: unset !important;
+  background-color: transparent !important;
+  outline: unset !important;
+}
+
+input:focus {
+  outline: unset !important;
+  box-shadow: unset !important;
+}
+
+.input-block {
+  border: 1px solid #cccdcfa9;
+  border-radius: 10px;
+  display: flex;
+  height: 34px;
+  align-items: center;
+  padding-left: 10px;
+  position: sticky;
+  top: 0;
+  bottom: 0;
+  left: 0
+}
+
+.input-block svg {
+  width: 20px;
+}
