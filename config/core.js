@@ -4,22 +4,11 @@ let search = document.getElementById("search");
 class addressFinder {
 	targetAddress = document.querySelector("input");
 	_url = "https://62e2906ee8ad6b66d85e7ac9.mockapi.io/products";
-	constructor(
-		_data,
-		address,
-		entrance,
-		entranceNum,
-		entranceAppartaments,
-		minAp,
-		maxAp
-	) {
+	constructor(_data, address, entrance, entranceNum) {
 		this._data = _data;
 		this.address = address;
 		this.entrance = entrance;
 		this.entranceNum = [];
-		this.entranceAppartaments = [];
-		this.minAp = this.minAp;
-		this.maxAp = this.maxAp;
 	}
 	async request() {
 		this._response = await fetch(this._url);
@@ -30,7 +19,7 @@ class addressFinder {
 			if (obj.address == this.targetAddress.value) {
 				this.address = obj.address;
 				this.entrance = obj.entrances;
-				this.entrance.forEach((el, i, arr) => {
+				this.entrance.forEach((el, i) => {
 					this.entranceNum[i] = el.numEntrance;
 					this.entranceAppartaments[i] = el.apartaments;
 				});
@@ -42,7 +31,6 @@ class addressFinder {
 		}
 	}
 	getResults() {
-		// console.log(this._data);
 		results.innerHTML = "";
 		this._data
 			.filter((item) => {
